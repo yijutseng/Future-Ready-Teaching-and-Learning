@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042)file:///C:/Users/USER/Downloads/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Symposium on Faculty Development | NYCU (May 25–26, 2026)</title>
+  <meta name="description" content="Symposium on Faculty Development for Future-Ready Teaching and Learning, hosted at National Yang Ming Chiao Tung University (NYCU), Hsinchu, Taiwan, May 25–26, 2026.">
+
+  <style>
+    :root{
+      --bg: #0b1020;
+      --panel: rgba(255,255,255,0.06);
+      --panel2: rgba(255,255,255,0.10);
+      --text: rgba(255,255,255,0.92);
+      --muted: rgba(255,255,255,0.70);
+      --faint: rgba(255,255,255,0.55);
+      --line: rgba(255,255,255,0.12);
+      --accent: #7dd3fc;
+      --accent2: #a78bfa;
+      --ok: #34d399;
+      --shadow: 0 18px 60px rgba(0,0,0,0.35);
+      --radius: 18px;
+      --radius2: 24px;
+      --max: 1120px;
+      --h1: clamp(2.0rem, 4vw, 3.1rem);
+      --h2: clamp(1.35rem, 2.2vw, 1.9rem);
+      --h3: 1.1rem;
+      --p: 1.02rem;
+    }
+
+    *{ box-sizing: border-box; }
+    html, body{ height: 100%; }
+    body{
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      color: var(--text);
+      background:
+        radial-gradient(1200px 600px at 18% 15%, rgba(125,211,252,0.16), transparent 55%),
+        radial-gradient(900px 500px at 78% 10%, rgba(167,139,250,0.14), transparent 55%),
+        radial-gradient(900px 700px at 50% 80%, rgba(52,211,153,0.10), transparent 60%),
+        linear-gradient(180deg, #070a14 0%, #0b1020 35%, #070a14 100%);
+      line-height: 1.55;
+    }
+
+    a{ color: inherit; text-decoration: none; }
+    a:hover{ text-decoration: underline; }
+
+    .container{ width: min(var(--max), calc(100% - 40px)); margin: 0 auto; }
+
+    /* Top nav */
+    .nav{
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      backdrop-filter: blur(12px);
+      background: rgba(7,10,20,0.55);
+      border-bottom: 1px solid var(--line);
+    }
+    .nav-inner{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      padding: 14px 0;
+    }
+    .brand{
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      min-width: 220px;
+    }
+    .logo{
+      width: 40px; height: 40px;
+      border-radius: 12px;
+      background:
+        radial-gradient(circle at 30% 30%, rgba(125,211,252,0.95), transparent 55%),
+        radial-gradient(circle at 70% 70%, rgba(167,139,250,0.90), transparent 60%),
+        rgba(255,255,255,0.07);
+      border: 1px solid rgba(255,255,255,0.18);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+    }
+    .brand h1{
+      margin: 0;
+      font-size: 0.98rem;
+      letter-spacing: 0.2px;
+      line-height: 1.15;
+    }
+    .brand span{
+      display: block;
+      font-size: 0.82rem;
+      color: var(--muted);
+      margin-top: 2px;
+    }
+
+    .nav-links{
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+    .nav-links a{
+      font-size: 0.92rem;
+      color: var(--muted);
+      padding: 8px 10px;
+      border-radius: 12px;
+    }
+    .nav-links a:hover{
+      background: rgba(255,255,255,0.06);
+      color: var(--text);
+      text-decoration: none;
+    }
+
+    .btn{
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 10px 14px;
+      border-radius: 14px;
+      border: 1px solid rgba(255,255,255,0.16);
+      background: rgba(255,255,255,0.07);
+      color: var(--text);
+      cursor: pointer;
+      transition: transform .12s ease, background .12s ease, border-color .12s ease;
+      text-decoration: none !important;
+      white-space: nowrap;
+    }
+    .btn:hover{ transform: translateY(-1px); background: rgba(255,255,255,0.10); border-color: rgba(255,255,255,0.22); }
+    .btn.primary{
+      background: linear-gradient(135deg, rgba(125,211,252,0.22), rgba(167,139,250,0.18));
+      border-color: rgba(125,211,252,0.32);
+    }
+
+    /* Hero */
+    .hero{ padding: 54px 0 28px; }
+    .hero-grid{
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 24px;
+      align-items: start;
+    }
+    .kicker{
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--muted);
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.12);
+      padding: 8px 12px;
+      border-radius: 999px;
+      font-size: 0.92rem;
+    }
+    .dot{
+      width: 9px; height: 9px;
+      background: var(--ok);
+      border-radius: 999px;
+      box-shadow: 0 0 0 6px rgba(52,211,153,0.12);
+    }
+
+    .hero h2{
+      font-size: var(--h1);
+      line-height: 1.08;
+      margin: 14px 0 12px;
+      letter-spacing: -0.5px;
+    }
+    .hero p{
+      font-size: var(--p);
+      color: var(--muted);
+      margin: 0 0 18px;
+      max-width: 68ch;
+    }
+    .hero-actions{ display: flex; gap: 12px; flex-wrap: wrap; margin-top: 14px; }
+    .meta-row{ display: flex; gap: 10px; flex-wrap: wrap; margin-top: 18px; }
+    .pill{
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.12);
+      padding: 8px 12px;
+      border-radius: 999px;
+      color: var(--faint);
+      font-size: 0.92rem;
+    }
+
+    .card{
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius2);
+      box-shadow: var(--shadow);
+    }
+    .hero-card{ padding: 18px; }
+    .hero-card h3{ margin: 0 0 10px; font-size: 1.05rem; }
+    .hero-card .item{
+      padding: 12px 12px;
+      border-radius: 16px;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.10);
+      margin-top: 10px;
+    }
+    .hero-card .item b{ display:block; font-weight: 600; margin-bottom: 4px; }
+    .hero-card .item span{ color: var(--muted); font-size: 0.95rem; }
+
+    /* Sections */
+    section{ padding: 34px 0; }
+    .section-title{
+      display:flex;
+      align-items:flex-end;
+      justify-content:space-between;
+      gap: 18px;
+      margin-bottom: 14px;
+    }
+    .section-title h2{ margin: 0; font-size: var(--h2); letter-spacing: -0.2px; }
+    .section-title p{ margin: 0; color: var(--muted); max-width: 72ch; }
+
+    .grid-3{ display:grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+    .grid-2{ display:grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+
+    .panel{
+      padding: 16px;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.10);
+      border-radius: var(--radius);
+      height: 100%;
+    }
+    .panel h3{ margin: 0 0 6px; font-size: var(--h3); }
+    .panel p{ margin: 0; color: var(--muted); font-size: 0.98rem; }
+
+    /* People */
+    .person{ display:flex; gap: 14px; align-items:flex-start; }
+    .avatar{
+      width: 52px; height: 52px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, rgba(125,211,252,0.30), rgba(167,139,250,0.24));
+      border: 1px solid rgba(255,255,255,0.18);
+      flex: 0 0 auto;
+      position: relative;
+      overflow: hidden;
+    }
+    .avatar::after{
+      content:"";
+      position:absolute; inset:-40%;
+      background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.35), transparent 55%);
+      transform: rotate(18deg);
+    }
+    .person h4{ margin: 0 0 2px; font-size: 1.02rem; }
+    .person .role{ color: var(--muted); font-size: 0.92rem; }
+    .person .note{ color: var(--faint); font-size: 0.92rem; margin-top: 6px; }
+
+    /* Agenda */
+    .agenda{
+      border-radius: var(--radius2);
+      overflow: hidden;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.04);
+    }
+    .agenda-row{
+      display:grid;
+      grid-template-columns: 160px 1fr 220px;
+      gap: 14px;
+      padding: 12px 14px;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      align-items: start;
+    }
+    .agenda-row:first-child{ border-top: 0; }
+    .agenda-row .time{ color: var(--faint); font-variant-numeric: tabular-nums; }
+    .agenda-row .title{ font-weight: 600; }
+    .agenda-row .who{ color: var(--muted); text-align: right; }
+
+    footer{
+      padding: 26px 0 40px;
+      border-top: 1px solid var(--line);
+      background: rgba(7,10,20,0.35);
+    }
+    footer .foot{
+      display:flex;
+      justify-content:space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    @media (max-width: 920px){
+      .hero-grid{ grid-template-columns: 1fr; }
+      .grid-3{ grid-template-columns: 1fr; }
+      .grid-2{ grid-template-columns: 1fr; }
+      .agenda-row{ grid-template-columns: 1fr; }
+      .agenda-row .who{ text-align: left; }
+      .brand{ min-width: auto; }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- NAV -->
+  <div class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="file:///C:/Users/USER/Downloads/index.html#top" aria-label="Home">
+        <div class="logo" aria-hidden="true"></div>
+        <div>
+          <h1>Symposium on Faculty Development</h1>
+          <span>Future-Ready Teaching &amp; Learning • NYCU</span>
+        </div>
+      </a>
+
+      <div class="nav-links" role="navigation" aria-label="Primary">
+        <a href="file:///C:/Users/USER/Downloads/index.html#about">About</a>
+        <a href="file:///C:/Users/USER/Downloads/index.html#themes">Themes</a>
+        <a href="file:///C:/Users/USER/Downloads/index.html#people">People</a>
+        <a href="file:///C:/Users/USER/Downloads/index.html#schedule">Schedule</a>
+        <a href="file:///C:/Users/USER/Downloads/index.html#submit">Abstracts</a>
+        <a href="file:///C:/Users/USER/Downloads/index.html#register" class="btn primary">Register</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <header id="top" class="hero">
+    <div class="container hero-grid">
+      <div>
+        <div class="kicker">
+          <span class="dot" aria-hidden="true"></span>
+          <span><b>Two-Day Mini-Symposium</b> • May 25–26, 2026 • Hsinchu, Taiwan • Hosted at NYCU</span>
+        </div>
+
+        <h2>
+          Symposium on Faculty Development
+          <span style="color:var(--accent)">for Future-Ready</span>
+          Teaching and Learning
+        </h2>
+
+        <p>
+          Faculty across Asia face increasing demands to adapt teaching and mentoring practices to prepare students
+          for the challenges of the 21st century. This symposium convenes international and regional leaders to share
+          future-ready pedagogy, practical generative AI applications, and mentorship training.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn primary" href="file:///C:/Users/USER/Downloads/index.html#register">Register (TBD)</a>
+          <a class="btn" href="file:///C:/Users/USER/Downloads/index.html#submit">Submit Abstract</a>
+          <a class="btn" href="file:///C:/Users/USER/Downloads/index.html#schedule">View Draft Schedule</a>
+        </div>
+
+        <div class="meta-row">
+          <span class="pill">📅 Dates: <b>May 25–26, 2026</b></span>
+          <span class="pill">📍 Location: <b>NYCU, Hsinchu, Taiwan</b></span>
+          <span class="pill">🧾 Abstract deadline: <b>March 15, 2026</b></span>
+          <span class="pill">🔗 Registration: <b>To be decided</b></span>
+        </div>
+      </div>
+
+      <aside class="card hero-card" aria-label="Quick details">
+        <h3>At a glance</h3>
+        <div class="item">
+          <b>Organizers</b>
+          <span>National Yang Ming Chiao Tung University (NYCU) &amp; Educational Innovation International LLC (EII)</span>
+        </div>
+        <div class="item">
+          <b>Format</b>
+          <span>Keynote(s), plenary sessions, hands-on workshops, faculty talks/posters, closing banquet &amp; networking</span>
+        </div>
+        <div class="item">
+          <b>Audience</b>
+          <span>Early- and mid-career faculty and staff from Asia-Pacific colleges and universities</span>
+        </div>
+      </aside>
+    </div>
+  </header>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <div class="section-title">
+        <div>
+          <h2>Overview</h2>
+          <p>
+            The symposium highlights future readiness, high-impact teaching practices, generative AI integration,
+            and faculty mentorship training, with opportunities for participants to showcase innovations through talks or posters.
+          </p>
+        </div>
+      </div>
+
+      <div class="grid-3">
+        <div class="panel">
+          <h3>Future Readiness</h3>
+          <p>Rethink curriculum, employability, creativity, and learning for rapidly changing societal and workforce needs.</p>
+        </div>
+        <div class="panel">
+          <h3>Practice-Focused AI</h3>
+          <p>Hands-on applications of generative AI for teaching, learning design, and future skill development.</p>
+        </div>
+        <div class="panel">
+          <h3>Mentorship &amp; Engagement</h3>
+          <p>Faculty mentorship training and practical approaches to engaging Gen-Z learners effectively.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- THEMES -->
+  <section id="themes">
+    <div class="container">
+      <div class="section-title">
+        <div>
+          <h2>Focus Areas</h2>
+          <p>Core elements emphasized across keynotes, plenaries, and workshops.</p>
+        </div>
+      </div>
+
+      <div class="grid-3">
+        <div class="panel">
+          <h3>High-Impact Teaching</h3>
+          <p>Evidence-based practices that improve learning outcomes and student persistence.</p>
+        </div>
+        <div class="panel">
+          <h3>Learning Design for Gen-Z</h3>
+          <p>Designing effective pedagogies for engagement, motivation, and modern learning behaviors.</p>
+        </div>
+        <div class="panel">
+          <h3>Regional Exchange</h3>
+          <p>A platform for Asia-Pacific faculty networking, collaboration, and sharing of innovations.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PEOPLE -->
+  <section id="people">
+    <div class="container">
+      <div class="section-title">
+        <div>
+          <h2>Leadership &amp; Committees</h2>
+          <p>Steering committee members and symposium leadership (additional speakers/facilitators to be announced).</p>
+        </div>
+      </div>
+
+      <div class="grid-2">
+        <div class="panel person">
+          <div class="avatar" aria-hidden="true"></div>
+          <div>
+            <h4>Prof. Yong Sheng Chen</h4>
+            <div class="role">VP for Academic Affairs, NYCU</div>
+            <div class="note">Steering Committee</div>
+          </div>
+        </div>
+
+        <div class="panel person">
+          <div class="avatar" aria-hidden="true"></div>
+          <div>
+            <h4>Prof. Yi-Ju Tseng</h4>
+            <div class="role">Director, Center of Teaching and Learning Development, NYCU</div>
+            <div class="note">Steering Committee</div>
+          </div>
+        </div>
+
+        <div class="panel person">
+          <div class="avatar" aria-hidden="true"></div>
+          <div>
+            <h4>Prof. Spencer Benson</h4>
+            <div class="role">Director, Educational Innovation International LLC (EII)</div>
+            <div class="note">Co-proposer &amp; Steering Committee</div>
+          </div>
+        </div>
+
+        <div class="panel person">
+          <div class="avatar" aria-hidden="true"></div>
+          <div>
+            <h4>Prof. Haydn Chen</h4>
+            <div class="role">Chief Strategy Officer, NYCU; Professor Emeritus, UIUC</div>
+            <div class="note">Co-proposer &amp; Steering Committee</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCHEDULE -->
+  <section id="schedule">
+    <div class="container">
+      <div class="section-title">
+        <div>
+          <h2>Tentative Schedule</h2>
+          <p>Draft structure for May 25–26, 2026. Exact times and speaker names will be posted as confirmed.</p>
+        </div>
+      </div>
+
+      <div class="agenda" role="table" aria-label="Tentative schedule">
+        <div class="agenda-row" role="row">
+          <div class="time" role="cell"><b>Day 1</b> • Morning</div>
+          <div class="title" role="cell">Opening keynote on Future Readiness + workshop on practical generative AI applications for future skill development</div>
+          <div class="who" role="cell">Keynote + Workshop</div>
+        </div>
+        <div class="agenda-row" role="row">
+          <div class="time" role="cell"><b>Day 1</b> • Afternoon</div>
+          <div class="title" role="cell">Plenary on High-Impact Teaching Practices + workshop on designing effective learning pedagogies for Gen-Z students</div>
+          <div class="who" role="cell">Plenary + Workshop</div>
+        </div>
+        <div class="agenda-row" role="row">
+          <div class="time" role="cell"><b>Day 2</b> • Morning</div>
+          <div class="title" role="cell">Hands-on workshop on faculty mentorship training</div>
+          <div class="who" role="cell">Workshop</div>
+        </div>
+        <div class="agenda-row" role="row">
+          <div class="time" role="cell"><b>Day 2</b> • Afternoon</div>
+          <div class="title" role="cell">Faculty presentations (talks or posters) showcasing innovations in teaching and learning</div>
+          <div class="who" role="cell">Talks / Posters</div>
+        </div>
+        <div class="agenda-row" role="row">
+          <div class="time" role="cell"><b>Day 2</b> • Evening</div>
+          <div class="title" role="cell">Closing banquet and networking</div>
+          <div class="who" role="cell">Banquet</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SUBMIT -->
+  <section id="submit">
+    <div class="container">
+      <div class="section-title">
+        <div>
+          <h2>Call for Abstracts</h2>
+          <p>Participants are invited to submit presentation abstracts to showcase innovative approaches to pedagogy, learning, and student engagement.</p>
+        </div>
+      </div>
+
+      <div class="card" style="padding:18px;">
+        <div class="grid-2" style="align-items:center;">
+          <div>
+            <h3 style="margin:0 0 6px;">Abstract submission</h3>
+            <p style="margin:0;color:var(--muted);">
+              Deadline: <b>March 15, 2026</b>. Submission link and guidelines: <b>TBD</b>.
+            </p>
+            <div class="meta-row" style="margin-top:12px;">
+              <span class="pill">🧾 Format: <b>Talk or Poster</b></span>
+              <span class="pill">🌏 Region: <b>Asia-Pacific</b></span>
+              <span class="pill">📌 Topics: <b>AI, pedagogy, mentorship, engagement</b></span>
+            </div>
+          </div>
+          <div style="display:flex; gap:12px; flex-wrap:wrap; justify-content:flex-end;">
+            <a class="btn primary" href="file:///C:/Users/USER/Downloads/index.html#" onclick="alert(&#39;Add your abstract submission form link here.&#39;); return false;">Submit Abstract (TBD)</a>
+            <a class="btn" href="file:///C:/Users/USER/Downloads/index.html#register">Registration Info</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REGISTER -->
+  <section id="register">
+    <div class="container">
+      <div class="section-title">
+        <div>
+          <h2>Registration</h2>
+          <p>Registration link will be announced. Please check back or contact the organizers.</p>
+        </div>
+      </div>
+
+      <div class="card" style="padding:18px;">
+        <div class="grid-2" style="align-items:center;">
+          <div>
+            <h3 style="margin:0 0 6px;">Registration link: TBD</h3>
+            <p style="margin:0;color:var(--muted);">
+              We will publish the registration form once it is finalized. You may also request updates via email.
+            </p>
+            <div class="meta-row" style="margin-top:12px;">
+              <span class="pill">📍 Venue support: <b>NYCU (in-kind)</b></span>
+              <span class="pill">✈️ Support: <b>Travel grants (competitive)</b></span>
+              <span class="pill">🎤 Speakers: <b>International + regional</b></span>
+            </div>
+          </div>
+          <div style="display:flex; gap:12px; flex-wrap:wrap; justify-content:flex-end;">
+            <a class="btn primary" href="file:///C:/Users/USER/Downloads/index.html#" onclick="alert(&#39;Replace this with your registration form link.&#39;); return false;">Register (TBD)</a>
+            <a class="btn" href="file:///C:/Users/USER/Downloads/index.html#people">Organizers</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OUTCOMES -->
+  <section id="outcomes">
+    <div class="container">
+      <div class="section-title">
+        <div>
+          <h2>Expected Outcomes</h2>
+          <p>What participants and institutions can expect to gain.</p>
+        </div>
+      </div>
+
+      <div class="grid-3">
+        <div class="panel">
+          <h3>Future-ready teaching capacity</h3>
+          <p>Strengthened ability to design learning experiences aligned with evolving needs and emerging tools.</p>
+        </div>
+        <div class="panel">
+          <h3>AI integration skills</h3>
+          <p>Enhanced practical skills in applying generative AI to teaching, learning, and mentorship.</p>
+        </div>
+        <div class="panel">
+          <h3>Regional collaboration platform</h3>
+          <p>Networking, collaborations, and sharing innovations across Asia-Pacific institutions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-title">
+        <div>
+          <h2>Contact</h2>
+          <p>For program, speaking, sponsorship, or logistics inquiries.</p>
+        </div>
+      </div>
+
+      <div class="grid-2">
+        <div class="panel">
+          <h3>Program / Content</h3>
+          <p>
+            Symposium Organizing Team (NYCU &amp; EII)<br>
+            <span style="color:var(--muted);">Email and office contacts to be added.</span>
+          </p>
+        </div>
+        <div class="panel">
+          <h3>Logistics / Registration</h3>
+          <p>
+            NYCU Host Office<br>
+            <span style="color:var(--muted);">Registration link and contact email to be announced.</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container foot">
+      <div>© <span id="year">2025</span> Symposium on Faculty Development • Hosted at NYCU</div>
+      <div style="display:flex; gap:14px; flex-wrap:wrap;">
+        <a href="file:///C:/Users/USER/Downloads/index.html#top">Back to top</a>
+        <a href="file:///C:/Users/USER/Downloads/index.html#submit">Abstracts</a>
+        <a href="file:///C:/Users/USER/Downloads/index.html#register">Register</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+
+</body></html>
